@@ -32,10 +32,15 @@
         <property name="show_sql">true</property>
 
         <!-- Drop and re-create the database schema on startup -->
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create</property>
 
         <!-- Names the annotated entity class -->
         <mapping class="models.UserDetails"/>
+        <mapping class="models.Storage"/>
+        <mapping class="models.Products"/>
+        <mapping class="models.Supplier"/>
+        <mapping class="models.Account"/>
+        <mapping class="models.Supermarket"/>
 
     </session-factory>
 
